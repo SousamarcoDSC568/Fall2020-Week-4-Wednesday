@@ -34,10 +34,76 @@ Draw A home Clip Art using SVG tags
     </li>
 </ol>
 
-<p>
-    <emps>
-        Due date is Monday 28 September!
-    </emps>
-</p>
+<!-- Creating the svg view box -->
+
+<svg width="500" height="500">
+
+    <!-- House -->
+    <rect x="50" y="90" width="150" height="150"
+          style="fill:saddlebrown;
+          stroke:Black;
+          stroke-width:5;
+          stroke-opacity:1.0"
+    />
+    </rect>
+
+    <!-- door -->
+    <rect x="130" y="170" width="50" height="70"
+          style="fill:sandybrown;
+          stroke:Black;
+          stroke-width:5;
+          fill-opacity: 0.9;
+          stroke-opacity:1.0"
+    />
+    </rect>
+
+    <!-- window -->
+    <rect x="70" y="170" width="40" height="40"
+          style="fill:lightblue;
+          stroke:Black;
+          stroke-width:5;
+          fill-opacity: 0.9;
+          stroke-opacity:1.0"
+    />
+    </rect>
+
+    <!-- an attempt at path (would've liked to outline bottom though) -->
+    <path d="M 70 170 Q 90 130 110 170"
+          style="fill:lightblue;
+          stroke:Black;
+          stroke-width:5;"
+    />
+
+    <!-- roof top -->
+    <rect x="40" y="90" width="170" height="10"
+          style="stroke:Black;
+          stroke-width:5;"
+    />
+    </rect>
+
+    <!-- roof (rotated) -->
+    <rect x="90" y="90" width="120" height="10" transform="rotate(45,210,90)"
+          style="stroke:black;
+          stroke-width:5;"
+    />
+    </rect>
+
+    <!-- roof (rotated)-->
+    <rect x="40" y="90" width="120" height="10" transform="rotate(-45,40,90)"
+          style="stroke:black;
+          stroke-width:5;"
+    />
+    </rect>
+
+    <!-- door handle -->
+    <circle cx="170" cy="210" r="5" stroke="black" stroke-width="3" fill="grey"
+    />
+    </circle>
+
+
+</svg>
+
+
+
 </body>
 </html>
